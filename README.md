@@ -4,5 +4,5 @@ pnpm run dev
 ```
 
 ```
-open http://localhost:47851
+open http://localhost:3000
 ```

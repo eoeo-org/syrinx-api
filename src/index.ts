@@ -279,7 +279,7 @@ app.openapi(synthesisRoute, async (c) => {
   }
 })
 
-const port = 47851
+const port = 3000
 console.log(`Server is running on port ${port}`)
 
 serve({
