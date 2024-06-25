@@ -51,6 +51,7 @@ FROM --platform=$BUILDPLATFORM base-build as build
 WORKDIR /_
 RUN --mount=type=bind,from=fetch-deps,source=/pnpm/,target=/pnpm/ \
     --mount=type=bind,from=dev-deps,source=/_/node_modules/,target=node_modules/ \
+    --mount=type=bind,source=tsconfig.json,target=tsconfig.json \
     --mount=type=bind,source=package.json,target=package.json \
     --mount=type=bind,from=change-npmrc,source=/_/.npmrc,target=.npmrc \
     --mount=type=bind,source=src/,target=src/ \
