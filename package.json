@@ -10,9 +10,6 @@
     "start": "tsx src/index.ts"
   },
   "packageManager": "pnpm@9.5.0",
-  "engines": {
-    "npm": "This project is configured to use pnpm"
-  },
   "dependencies": {
     "@discordjs-japan/om-syrinx": "github:discordjs-japan/om-syrinx#semver:0.4.1",
     "@hono/node-server": "^1.11.1",
